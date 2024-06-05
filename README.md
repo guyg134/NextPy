@@ -6,8 +6,6 @@ Welcome to the repository for the NextPy Python course from campus.il! This repo
 
 The NextPy course is designed to teach the fundamentals of Python programming through a series of hands-on exercises. The course covers a wide range of topics, including but not limited to:
 
-- Basic syntax and data types
-- Control flow (loops and conditionals)
 - Functions and modules
 - Exception handling
 - File I/O

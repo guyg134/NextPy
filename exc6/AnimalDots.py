@@ -46,19 +46,29 @@ second = (
 
 def main():
     # initialize x and y lists
-    x = first[0::2] + second[0::2]
-    y = first[1::2] + second[1::2]
+    body_x = first[0::2]
+    body_y = first[1::2]
 
+    head_x = second[0::2]
+    head_y = second[1::2]
 
 
     # title of the plot
-    plt.title("First Animal")
+    plt.title("Cow Animal Dots")
     # invert the y axis
     plt.gca().invert_yaxis()
 
     # plotting scatter and pyplot 
-    plt.scatter(x, y)
-    plt.plot(x, y)
+    plt.plot(body_x, body_y, color='black')
+
+    plt.plot(head_x, head_y, color='red')
+
+    plt.fill(body_x, body_y, color='black')
+    plt.fill(head_x, head_y, color='brown')
+
+    # draw eyes
+    plt.scatter(150, 150, color='black')
+    plt.scatter(123, 150, color='black')
     # display the plot
     plt.show()
 
